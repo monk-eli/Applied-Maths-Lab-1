@@ -1,0 +1,2 @@
+Result: 4.84256
+Iterations: 19 Function calls: 38
