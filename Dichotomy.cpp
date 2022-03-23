@@ -30,4 +30,5 @@ void Dichotomy() {
     std::ofstream fout (PATH);
     fout << "Result: " << (a+b)/2 << '\n';
     fout << "Iterations: " << ITERATION_COUNT << " Function calls: " << FUNCTION_CALLS << '\n';
+    fout.close();
     }
