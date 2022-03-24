@@ -1,8 +1,7 @@
-#include <iostream>
-#include "Dichotomy.h"
-#include <fstream>
+#include "methods.h"
 
 int main() {
     Dichotomy();
+    GoldenRatio();
     return 0;
 }

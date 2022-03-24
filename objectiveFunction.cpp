@@ -1,6 +1,6 @@
-#include "objectiveFunction.h"
+#include "methods.h"
 #include <cmath>
 
-double function(double x) {
+double objectiveFunction(double x) {
     return std::exp(std::sin(x) * std::log(x));
 }
