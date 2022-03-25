@@ -2,15 +2,15 @@
 #include "methods.h"
 #include <fstream>
 
-int ITERATION_COUNT = 0;
-int FUNCTION_CALLS = 0;
+int ITERATION_COUNT_D = 0;
+int FUNCTION_CALLS_D = 0;
 
 void Dichotomy() {
     double mid;
     double a = A0;
     double b = B0;
     while (b - a > EPS) {
-        ITERATION_COUNT++;
+        ITERATION_COUNT_D++;
         mid = (b + a) / 2;
 
         double y1 = objectiveFunction(mid - D);
