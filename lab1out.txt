@@ -1,4 +1,0 @@
-Dichotomy Result: 4.80469
-Iterations: 6 Function calls: 12
-Golden Ratio Result: 4.82779
-Iterations: 9 Function calls: 11
