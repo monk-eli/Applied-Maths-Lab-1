@@ -3,6 +3,7 @@
 int main() {
     Dichotomy();
     GoldenRatio();
-    fibonachi();
+    Fibonachi();
+    Parabola();
     return 0;
 }

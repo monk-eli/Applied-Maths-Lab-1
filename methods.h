@@ -8,6 +8,7 @@ double fibonachiNumberFunction(double n);
 
 void Dichotomy();
 void GoldenRatio();
-void fibonachi();
+void Fibonachi();
+void Parabola();
 
 #endif //LAB_1_DICHOTOMY_H
