@@ -1,6 +1,7 @@
 #include "constants.h"
 #include "methods.h"
 #include <fstream>
+#include <vector>
 
 int ITERATION_COUNT_D = 0;
 int FUNCTION_CALLS_D = 0;
@@ -24,16 +25,17 @@ void Dichotomy() {
         } else if (y1 > y2) {
             a = mid - D;
         }
-        section.push_back(b-a);
+        section.push_back(b - a);
     }
 
-    std::ofstream fout (PATH);
-    fout << "Dichotomy Result: " << (a+b)/2 << '\n';
+    std::ofstream fout(PATH);
+    fout << "Dichotomy Result: " << (a + b) / 2 << '\n';
     fout << "Iterations: " << ITERATION_COUNT_D << " Function calls: " << FUNCTION_CALLS_D << '\n';
     fout.close();
-    std::ofstream fout1 (PATHFORDICHOTOMY);
+
+    std::ofstream fout1(DICHOTOMYOUT);
     fout1 << "Section:" << '\n';
-    for(double x : section)
-    fout1 << x << '\n';
+    for (double i: section)
+        fout1 << i << '\n';
     fout1.close();
-    }
+}

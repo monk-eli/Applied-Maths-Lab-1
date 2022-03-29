@@ -1,9 +1,11 @@
 #include "methods.h"
 
+
 int main() {
     Dichotomy();
     GoldenRatio();
-    Fibonachi();
+    Fibonacci();
     Parabola();
+    Brent();
     return 0;
 }

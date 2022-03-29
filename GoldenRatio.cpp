@@ -36,17 +36,18 @@ void GoldenRatio() {
 
             FUNCTION_CALLS_GR++;
         }
-        section.push_back(b-a);
+        section.push_back(b - a);
     }
 
     std::ofstream fout(PATH, std::fstream::app);
     fout << "Golden Ratio Result: " << (a + b) / 2 << '\n';
     fout << "Iterations: " << ITERATION_COUNT_GR << " Function calls: " << FUNCTION_CALLS_GR << '\n';
     fout.close();
-    std::ofstream fout1 (PATHFORGOLDENRATIO);
+
+    std::ofstream fout1(GOLDENRATIOOUT);
     fout1 << "Section:" << '\n';
-    for(double x : section)
-    fout1 << x << '\n';
+    for (double i: section)
+        fout1 << i << '\n';
     fout1.close();
 }
 

@@ -3,12 +3,14 @@
 
 #include <fstream>
 
+
 double objectiveFunction(double x);
-double fibonachiNumberFunction(double n);
+double fibonacciNumberFunction(double n);
 
 void Dichotomy();
 void GoldenRatio();
-void Fibonachi();
+void Fibonacci();
 void Parabola();
+void Brent();
 
 #endif //LAB_1_DICHOTOMY_H
