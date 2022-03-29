@@ -3,13 +3,13 @@
 #include <iostream>
 #include "methods.h"
 #include <fstream>
-#include <cstdint>
 
 int ITERATION_COUNT_P = 0;
 int FUNCTION_CALLS_P = 0;
 
 void Parabola(){
     double a = A0, b = B0;
+    std::vector<double> section;
     while(b - a > EPS){
        ITERATION_COUNT_P++;
        double y1 = objectiveFunction(a);
@@ -35,11 +35,17 @@ void Parabola(){
             b = c;
             }
         }
+        section.push_back(b-a);
     }
     std::ofstream fout(PATH, std::fstream::app);
     fout << "Parabola Result: " << (b + a) / 2 << '\n';
     fout << "Iterations: " << ITERATION_COUNT_P << " Function calls: " << FUNCTION_CALLS_P << '\n';
     fout.close();
+    std::ofstream fout1 (PATHFORPARABOLA);
+    fout1 << "Section:" << '\n';
+    for(double x : section)
+    fout1 << x << '\n';
+    fout1.close();
 }
 
 
