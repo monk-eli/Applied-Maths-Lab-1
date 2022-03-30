@@ -1,6 +1,5 @@
 #include "methods.h"
 
-
 int main() {
     Dichotomy();
     GoldenRatio();

@@ -2,7 +2,6 @@
 #include "methods.h"
 #include "constants.h"
 
-
 int ITERATION_COUNT_B = 0;
 int FUNCTION_CALLS_B = 0;
 

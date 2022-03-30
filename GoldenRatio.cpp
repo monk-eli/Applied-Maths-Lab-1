@@ -1,8 +1,8 @@
 #include <iostream>
-#include "constants.h"
-#include "methods.h"
 #include <fstream>
 #include <vector>
+#include "constants.h"
+#include "methods.h"
 
 int ITERATION_COUNT_GR = 0;
 int FUNCTION_CALLS_GR = 0;
