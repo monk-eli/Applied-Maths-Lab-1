@@ -1,5 +1,5 @@
-#ifndef LAB_1_DICHOTOMY_H
-#define LAB_1_DICHOTOMY_H
+#ifndef LAB_1_METHODS_H
+#define LAB_1_METHODS_H
 
 #include <fstream>
 
@@ -13,4 +13,4 @@ void Fibonacci();
 void Parabola();
 void Brent();
 
-#endif //LAB_1_DICHOTOMY_H
+#endif //LAB_1_METHODS_H
